@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containerPrim">
+        <header>
+            <h1 class="titulo">GUESS THE NUMBER - o jogo</h1>
+        </header>
+        <main>
+            <p class="saudacao">Seja bem-vindo ao Guess the Number.</p>
+            <section class="regra">
+                <h2>Como funciona</h2>
+                <p>A nossa Inteligência irá sortear um número de 1 a 100, e você terá que acertar, se provando mais inteligente...</p>
+            </section>
+            <section class="espacoUser">
+                <p id="numVidas"></p>
+                <label for="valorChute">Faça o seu chute!</label>
+                <div class="inputs">
+                    <input type="number" id="valorChute" placeholder="Seu chute...">
+                    <button onclick="Chutar()" id="btnChute" type="button">CHUTAR!</button>
+                </div>
+                <div class="listaChute">
+                    <h2 class="textoLabel">Seus chutes foram:</h2>
+                    <p id="chutesFeitos"></p>
+                </div>
+            <section class="resultado">
+                <p id="resultado"></p>
+            </section>
+            <section class="deNovo">
+                <button onclick="recomecar()">Tentar novamente...</button>
+            </section>
+        </main>
+        <aside class="dicas">
+            <button onclick="dica()">Dica</button>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
