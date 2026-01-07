@@ -1,0 +1,32 @@
+/* CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large; 
+}
+
+body main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-radius: 10px;
+    margin: 5% 35%;
+}
+
+.container{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    margin-top: 10px;
+}
