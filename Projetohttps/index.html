@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CadastroClientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2 class="titulo">Cadastro de Clientes</h2>
+        <form id="formCad">
+            <div class="container">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" required>
+
+                <button id="adicionar" class="btn" type="submit">Cadastrar</button>
+            </div>
+        </form>
+
+        <ul id="listaClientes">
+            <h3>Clientes registrados</h3>
+        </ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
